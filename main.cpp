@@ -3,7 +3,8 @@
 // Date        11.01.22
 //
 // But			Simuler une experience d'une planche de Galton. A la fin du
-// programme, le nombre de billes dans chaque case est afficher dans la console.
+// 				programme, le nombre de billes dans chaque case est afficher
+// 				dans la console.
 //
 // Remarque
 //
