@@ -41,7 +41,7 @@ void cleanBuffer();
  * @param left_msg
  * @param spacing
  * @param right_msg
- * @return
+ * @return - Une valeur du type \b T
  */
 template <typename T>
 T saisie(const std::string&  left_msg,
