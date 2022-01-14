@@ -11,19 +11,41 @@
 #define LABO_08_O_GALTON_H
 #include <vector>		// pour vector
 
+
+/**
+ * @class Galton
+ *
+ * @brief classe simulant une planche de Galton.
+ *
+ * Classe simple avec un constructeur et une methode d'affichage,
+ * permettant à l'utilisateur de réaliser une simulation de la planche de Galton
+ * en instanciant un objet.
+ * Par la suite il sera possible de d'afficher les résultats de la simulation
+ * grâce à la methode \b affichageBilles() .
+ *
+ */
 class Galton {
 public:
+	
 	/**
-	 * @name 	Galton	: une planche de Galton
-	 * @brief	creation d'une planche de Galton
+	 * @name 	Galton()
+	 * @brief	Constructeur de Galton
 	 *
-	 * @param 	hauteur : nombre de rangees
+	 * Initialise les attribut de la classe en fonction des paramètre et
+	 * affecte le vecteur de résultat par un simulation du jeu.
+	 *
+	 * @param 	hauteur  : nombre de rangees
 	 * @param 	billes	: nombre de billes
 	 */
 	Galton(unsigned hauteur, unsigned billes);
+	
 	/**
-	 * @name		affichageBilles
+	 * @fn		affichageBilles()
+	 *
 	 * @brief 	affiche dans la console la distribution des billes dans les cases.
+	 *
+	 * La fonction permet d'afficher dans la console un représentation graphique des
+	 * résultat de la planche de Galton généré par le constructeur.
 	 */
 	void affichageBilles() const;
 

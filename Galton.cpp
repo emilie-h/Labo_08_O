@@ -4,13 +4,13 @@
 //
 // But				Creation d'une classe Galton, qui va simuler le lancement de
 // 					chaque bille selon le nombre de fois qu'elle va tomber sur un
-// 					clou. Apres chaque lances, le programme determine l'emplacement
+// 					clou. Apres chaque lancé, le programme determine l'emplacement
 // 					de la bille. A la fin de la simulation, on affiche dans la
 // 					console la distribution des billes dans les cases.
 //
-// Remarque			On suppose que les clous sont arranges symetriquements
-// 					et que la planche de Galton n'est pas truquee.
-// 					(la probabilite de tomber a gauche est de 0.5)
+// Remarque			On suppose que les clous sont arrangés symétriquement
+// 					et que la planche de Galton n'est pas truquée.
+// 					(la probabilité de tomber à gauche est de 0.5)
 //
 // Compilateur 	Apple clang 13.0.0 et Mingw-w64 g++ 11.2.0
 
@@ -26,21 +26,21 @@ Galton::Galton(unsigned hauteur, unsigned billes) : BILLE('*'), ESPACE(' '),
 	//on change la taille du vecteur pour qu'elle corresponde au nombre de cases
 	resultat.resize(h + 1);
 
-	//seed, utiliser pour le nombre aleatoire
+	//seed, utiliser pour le nombre aléatoire
 	random_device rd;
 
-	//distribution generee de maniere aleatoire. Elle vaut 0 si la bille tombe a
+	//distribution générée de manière aléatoire. Elle vaut 0 si la bille tombe a
 	// gauche et 1 si elle tombe a droite
 	uniform_int_distribution<int> distribution(GAUCHE,DROITE);
 
 	//repartition des billes dans les cases
-	for(int i = 0; i < b; ++i ){
-		int noCase = 0;
-		//a chaque impact de la bille avec les clous, jusqu'au dernier, on
-		// genere le chiffre aleatoire, ce qui determinera a la toute fin la
+	for(unsigned i = 0; i < b; ++i ){
+		size_t noCase = 0;
+		// à chaque impact de la bille avec les clous, jusqu'au dernier, on
+		// génère le chiffre aléatoire, ce qui déterminera a la toute fin la
 		// position de la bille
-		for (int j = 0; j < h; ++j ) {
-			noCase += distribution(rd);
+		for (unsigned j = 0; j < h; ++j ) {
+			noCase += (size_t)distribution(rd);
 		}
 		//On ajoute le resultat dans le vecteur
 		++resultat.at(noCase);
@@ -48,6 +48,9 @@ Galton::Galton(unsigned hauteur, unsigned billes) : BILLE('*'), ESPACE(' '),
 }
 
 void Galton::affichageBilles() const{
+	
+	//retour à la ligne
+	cout << endl;
 
 	//determine le nombre maximal de lignes à afficher
 	unsigned maxLigne = *(max_element(resultat.begin(), resultat.end()));
