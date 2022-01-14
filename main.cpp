@@ -2,11 +2,12 @@
 // Auteur		Emilie Bressoud et Loic Brasey
 // Date			11.01.22
 //
-// But			Simuler une experience d'une planche de Galton. A la fin du
+// But			Simuler une expérience d'une planche de Galton. A la fin du
 // 				programme, le nombre de billes dans chaque case est affiche
 // 				dans la console.
 //
-// Remarque
+// Remarque		Le programme ne prend pas en compte si l'utilisateur entre plus
+// 				d'un seul caractère.
 //
 // Compilateur Apple clang 13.0.0 et Mingw-w64 g++ 11.2.0
 
@@ -51,7 +52,7 @@ int main() {
 	// Boucle principale
 	do {
 
-		//entrees utilisateurs avec verification des saisies
+		//entrées utilisateurs avec vérification des saisies
 		do { hauteur = saisie<unsigned>(MSG_HAUTEUR, ESPACEMENT,MSG_HAUTEUR_LIM);
 		}while(!((hauteur >= MIN_HAUTEUR) && (hauteur <= MAX_HAUTEUR)));
 

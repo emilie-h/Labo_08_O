@@ -45,7 +45,7 @@ public:
 	 * @brief 	affiche dans la console la distribution des billes dans les cases.
 	 *
 	 * La fonction permet d'afficher dans la console un représentation graphique des
-	 * résultat de la planche de Galton généré par le constructeur.
+	 * résultats de la planche de Galton généré par le constructeur.
 	 */
 	void affichageBilles() const;
 

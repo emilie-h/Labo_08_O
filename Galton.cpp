@@ -2,7 +2,7 @@
 // Auteur			Emilie Bressoud et Loic Brasey
 // Date				11.01.22
 //
-// But				Creation d'une classe Galton, qui va simuler le lancement de
+// But				Création d'une classe Galton, qui va simuler le lancement de
 // 					chaque bille selon le nombre de fois qu'elle va tomber sur un
 // 					clou. Apres chaque lancé, le programme determine l'emplacement
 // 					de la bille. A la fin de la simulation, on affiche dans la
@@ -42,7 +42,7 @@ Galton::Galton(unsigned hauteur, unsigned billes) : BILLE('*'), ESPACE(' '),
 		for (unsigned j = 0; j < h; ++j ) {
 			noCase += (size_t)distribution(rd);
 		}
-		//On ajoute le resultat dans le vecteur
+		//On ajoute le résultat dans le vecteur
 		++resultat.at(noCase);
 	}
 }
@@ -52,7 +52,7 @@ void Galton::affichageBilles() const{
 	//retour à la ligne
 	cout << endl;
 
-	//determine le nombre maximal de lignes à afficher
+	//détermine le nombre maximal de lignes à afficher
 	unsigned maxLigne = *(max_element(resultat.begin(), resultat.end()));
 
 	//affichage de chaque ligne en partant du haut

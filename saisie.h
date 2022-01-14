@@ -21,7 +21,7 @@
  *
  * @brief Fonction pour réparer et vider le buffer cin.
  *
- * La fonction verifier l'état du buffer cin et le répare si besoin.\n
+ * La fonction vérifie l'état du buffer cin et le répare si besoin.\n
  * La fonction va ensuite vider le buffer cin.
  */
 void cleanBuffer();
