@@ -1,14 +1,12 @@
-/*
------------------------------------------------------------------------------------
-Nom du fichier : saisie.cpp
-Auteur(s)      : Loïc Brasey
-Date creation  : 11-01-2022
-Description    : Ce fichier contient les définitions de plusieurs fonctions de
-                 saisie.
-Remarque(s)    : -
-Compilateur    : Mingw-w64 g++ 11.2.0
------------------------------------------------------------------------------------
-*/
+// Fichier			saisie.cpp
+// Auteur			Emilie Bressoud et Loic Brasey
+// Date				11.01.22
+//
+// But				Ce fichier contient les définitions de plusieurs fonctions de saisie.
+//
+// Remarque
+//
+// Compilateur		Apple clang 13.0.0 et Mingw-w64 g++ 11.2.0
 
 #include "saisie.h"
 #include <iostream> // pour cin

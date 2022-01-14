@@ -3,4 +3,4 @@ project(Labo_08_O)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Labo_08_O main.cpp saisie.cpp saisie.h Galton.cpp Galton.h annexe.cpp annexe.h)
+add_executable(Labo_08_O main.cpp saisie.cpp saisie.h Galton.cpp Galton.h)
