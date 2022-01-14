@@ -23,7 +23,7 @@ int main() {
 						 	MAX_HAUTEUR 		= 100,
 						 	MIN_BILLES 			= 1,
 						 	MAX_BILLES			= 1000,
-						 	ESPACEMENT 			= 20;
+						 	ESPACEMENT 			= 23;
 
 	const string 		MSG_BIENVENUE 		= "ce programme ...",
 			 		 		MSG_HAUTEUR 		= "hauteur",
